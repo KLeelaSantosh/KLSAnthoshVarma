@@ -1,0 +1,32 @@
+1.	include<stdio.h>
+2.	int main()
+3.	{
+4.	int t;
+5.	scanf("%d", &t);
+6.	for (inti = 0; i< t; i++)
+7.	  {
+8.	longlongintnum, q, q_l, q_r;
+9.	scanf("%lld", &num);
+10.	longlongint a[num+1];
+11.	longlongintar[num+1];
+12.	for (inti = 1; i<=num ; i++)
+13.	    {
+14.	ar[i]=0;
+15.	    }
+16.	for (inti = 1; i<= num; i++)
+17.	    {
+18.	scanf("%lld", &a[i]);
+19.	ar[i]=ar[i-1]+a[i];
+20.	    }
+21.	scanf("%lld", &q);
+22.	longlongint sum = 0;
+23.	for (int j = 1; j <= q; j++)
+24.	    {
+25.	scanf("%lld %lld", &q_l, &q_r);
+26.	printf("%lld\n",(ar[q_r]-ar[q_l-1]));
+27.	    }
+28.	
+29.	  }
+30.	return0;
+31.	}
+
